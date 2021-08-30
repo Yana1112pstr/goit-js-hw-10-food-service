@@ -11,4 +11,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=r(require("./menu.json")),t=r(require("./template/menu-card.hbs"));function r(e){return e&&e.__esModule?e:{default:e}}const c={LIGHT:"light-theme",DARK:"dark-theme"},a=document.querySelector(".js-menu"),n=document.body.classList;function o(e){return a.insertAdjacentHTML("beforeend",(0,t.default)(e))}o(e.default);const u=document.querySelector("#theme-switch-toggle");function l(e){if(e.target.checked)return n.replace(c.LIGHT,c.DARK),void localStorage.setItem("theme",c.DARK);n.replace(c.DARK,c.LIGHT),localStorage.setItem("theme",c.LIGHT)}n.add(null===localStorage.getItem("theme")?c.LIGHT:localStorage.getItem("theme")),n.value===c.DARK&&(u.checked=!0),u.addEventListener("change",l);
 },{"./sass/main.scss":"clu1","./menu.json":"mA8c","./template/menu-card.hbs":"Fb6m"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.02fddb0b.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.02fddb0b.js.map
